@@ -2200,9 +2200,6 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-portable-utilities@../framer-portable-utilities/:
-  version "1.0.0"
-
 framer@^1.0.17:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/framer/-/framer-1.0.17.tgz#2f7bc2588db015e9c8dd835a33a5f74193be3076"

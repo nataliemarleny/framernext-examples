@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import { useCycle } from 'framer-portable-utilities';
+import { useCycle } from "../framer-utils";
 import "../css/styles.css";
 
 const [Frame] = ["Frame"].map(c =>
