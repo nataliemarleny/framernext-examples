@@ -1,7 +1,8 @@
 import dynamic from "next/dynamic";
+import { useCycle } from 'framer-portable-utilities';
 import "../css/styles.css";
 
-const [Frame, useCycle] = ["Frame", "useCycle"].map(c =>
+const [Frame] = ["Frame"].map(c =>
   dynamic(() => import("framer").then(mod => mod[c]), { ssr: false })
 );
 

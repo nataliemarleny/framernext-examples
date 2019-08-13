@@ -1,0 +1,13 @@
+{
+  "name": "framer-portable-utilities",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "react": "^16.9.0"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0"
+  }
+}
