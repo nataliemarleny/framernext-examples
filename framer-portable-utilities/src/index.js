@@ -1,13 +1,18 @@
 const { useState } = require('react');
 
-exports.useCycle = function() {
-  let allValuesLength = arguments.length;
+exports.useCycle = function(){
+  const allValues = arguments;
+  const allValuesLength = arguments.length;
+
   let [currentIndex, setCurrentIndex] = useState(0);
-  let [currentValue, setCurrentValue] = useState(arguments[currentIndex]);
+  let [currentValue, setCurrentValue] = useState(allValues[currentIndex]);
 
   let cycleValue = () => {
-    setCurrentIndex((currentIndex + 1) % allValuesLength);
-    setCurrentValue(arguments[currentIndex])
+    setCurrentIndex(previousIndex => {
+      const newIndex = (previousIndex + 1) % allValuesLength;
+      setCurrentValue(allValues[newIndex]);
+      return newIndex;
+    });
   }
 
   return [currentValue, cycleValue];
