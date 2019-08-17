@@ -11,7 +11,7 @@ body {
   display: flex;
   place-content: center;
   place-items: center;
-  background: rgba(0, 85, 255, 1);
+  background: rgba(255, 0, 85, 1);
   margin: 0;
   padding: 0;
   perspective: 1000px;
